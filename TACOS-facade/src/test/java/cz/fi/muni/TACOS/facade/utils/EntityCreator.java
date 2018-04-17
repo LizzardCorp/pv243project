@@ -36,6 +36,7 @@ public class EntityCreator {
 		user.setName("Regular");
 		user.setSurname("User");
 		user.setEmail("somerandomregularuser@worldofjava.com");
+		user.setPasswordHash("passwordHash");
 		user.setRole(UserRole.SUBMITTER);
 		return user;
 	}
@@ -46,6 +47,7 @@ public class EntityCreator {
 		user.setName("Second");
 		user.setSurname("Regularuser");
 		user.setEmail("secondrandomuserwithemail@worldofjava.com");
+		user.setPasswordHash("passwordHash");
 		user.setRole(UserRole.SUPERADMIN);
 		return user;
 	}
