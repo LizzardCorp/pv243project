@@ -1,0 +1,20 @@
+<div *ngIf="loaded" class="detail">
+  <app-template-detail
+    [template]="this.template">
+  </app-template-detail>
+
+  <h4>Attribute categories</h4>
+  <app-attributeCategory-list
+    [attributeCategories]= this.template.attributeCategories>
+  </app-attributeCategory-list>
+
+  <div class="row">
+    <p>Name : </p>
+    <p>{{order.name}}</p>
+  </div>
+
+  <div class="text-center mt-4">
+    <button class="btn btn-primary" routerLink="./..">Back</button>
+  </div>
+
+</div>

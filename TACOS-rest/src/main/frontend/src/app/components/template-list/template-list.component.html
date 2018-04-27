@@ -1,0 +1,19 @@
+<div class="template-list" >
+  <div class="row header">
+    <div class="col-lg-3">
+      Id
+    </div>
+    <div class="col-lg-3">
+      Name
+    </div>
+    <div class="col-lg-3">
+      Minimal Price
+    </div>
+  </div>
+  <app-template-list-node *ngFor="let template of this.templates"
+                       [template] = template class="col-sm-1 col-md-1 col-lg-1">
+  </app-template-list-node>
+  <div *ngIf="this.templates == null || this.templates.length == 0" class="template-list-node">
+  </div>
+
+</div>
