@@ -55,6 +55,18 @@ import { AddUserComponent } from './admin/add-user/add-user.component';
 import { OrderDetailPageComponent } from './components/order-detail-page/order-detail-page.component';
 import { OrderDetailComponent } from './components/order-detail-page/order-detail/order-detail.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { ManufactureComponent } from './manufacture/manufacture.component';
+import { OrdersManagementComponent } from './manufacture/orders-management/orders-management.component';
+import { TemplatesManagementComponent } from './manufacture/templates-management/templates-management.component';
+import { AttributesManagementComponent } from './manufacture/attributes-management/attributes-management.component';
+import { AttributeCategoriesManagementComponent } from './manufacture/attribute-categories-management/attribute-categories-management.component';
+import { ProductCategoriesManagementComponent } from './manufacture/product-categories-management/product-categories-management.component';
+import { ProductsManagementComponent } from './manufacture/products-management/products-management.component';
+import { ManufactureHeaderComponent } from './manufacture/manufacture-header/manufacture-header.component';
+import { TemplateListComponent } from './components/template-list/template-list.component';
+import { TemplateListNodeComponent } from './components/template-list/template-list-node/template-list-node.component';
+import { TemplateDetailPageComponent } from './components/template-detail-page/template-detail-page.component';
+import { TemplateDetailComponent } from './components/template-detail-page/template-detail/template-detail.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +103,18 @@ import { ProductListComponent } from './components/product-list/product-list.com
     OrderDetailPageComponent,
     OrderDetailComponent,
     ProductListComponent,
+    ManufactureComponent,
+    OrdersManagementComponent,
+    TemplatesManagementComponent,
+    AttributesManagementComponent,
+    AttributeCategoriesManagementComponent,
+    ProductCategoriesManagementComponent,
+    ProductsManagementComponent,
+    ManufactureHeaderComponent,
+    TemplateListComponent,
+    TemplateListNodeComponent,
+    TemplateDetailPageComponent,
+    TemplateDetailComponent,
   ],
   imports: [
     BrowserModule,
