@@ -111,28 +111,28 @@ public class SampleData {
 		user.setName("Regular");
 		user.setSurname("User");
 		user.setPassword("password");
-		user.setEmail("somerandomregularuser@worldofjava.com");
+		user.setEmail("submitter@email.com");
 		user.setRole(UserRole.SUBMITTER);
 		userId1 = userFacade.create(user);
 
 		user.setName("Name");
 		user.setSurname("Surname");
 		user.setPassword("password");
-		user.setEmail("email@worldofjava.com");
+		user.setEmail("email@email.com");
 		user.setRole(UserRole.SUPERADMIN);
 		userId2 = userFacade.create(user);
 
 		user.setName("Admin");
 		user.setSurname("User");
 		user.setPassword("password");
-		user.setEmail("ruser@worldofjava.com");
+		user.setEmail("admin@email.com");
 		user.setRole(UserRole.SUPERADMIN);
 		userId3 = userFacade.create(user);
 
 		user.setName("Practitioner");
 		user.setSurname("User");
 		user.setPassword("password");
-		user.setEmail("somerandomregularuser@email.com");
+		user.setEmail("practitioner@email.com");
 		user.setRole(UserRole.PRACTITIONER);
 		userId4 = userFacade.create(user);
 	}
@@ -245,6 +245,11 @@ public class SampleData {
 		product.setDescription("Donec est ligula, dignissim vitae mattis nec, facilisis et sem. Aliquam eleifend massa vel nisi placerat, vitae lobortis diam auctor. In finibus consectetur dapibus. Ut ut ex cursus, luctus metus sed, elementum leo. Mauris sollicitudin condimentum nisl ac venenatis. Donec laoreet, quam a elementum bibendum, velit sapien efficitur libero, in euismod neque est quis libero.");
 		product.setName("Trousers");
 		product.setProductCategoryIds(Collections.singleton(pcTrousersId));
+		productTrousers2 = productFacade.create(product);
+
+		product.setDescription("Donec est ligula, dignissim vitae mattis nec, facilisis et sem. Aliquam eleifend massa vel nisi placerat, vitae lobortis diam auctor. In finibus consectetur dapibus. Ut ut ex cursus, luctus metus sed, elementum leo. Mauris sollicitudin condimentum nisl ac venenatis. Donec laoreet, quam a elementum bibendum, velit sapien efficitur libero, in euismod neque est quis libero.");
+		product.setName("Necklace");
+		product.setProductCategoryIds(Collections.singleton(pcAccessoriesId));
 		productTrousers2 = productFacade.create(product);
 
 		product.setDescription("Phasellus eu ullamcorper nulla. Nulla augue lectus, dictum ut est sed, ultrices auctor ipsum. Mauris semper eu nibh a porttitor. Donec magna leo, gravida sed tincidunt vitae, sodales volutpat metus. Aliquam tempus efficitur augue et fringilla. Aliquam euismod ultrices nunc. Proin erat ligula, vulputate ac odio ac, rhoncus tempor nunc. Mauris nibh eros, tincidunt eget fringilla eget, semper ut ex.");
